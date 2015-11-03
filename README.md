@@ -2,6 +2,7 @@
 
 This repo contains the scripts I have written so far for adding custom packages to the CentOS 7 installation. I started this to add DisplayCluster 0.4 to the KVL CentOS 7 installation. Most of the required packages were installed by default, however, some were needed including:
 * FFMPEG-0.10.2
+
 There were some optional packages needed including:
 * poppler-0.37.0
 * TUIO-1.4
