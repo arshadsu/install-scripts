@@ -17,9 +17,6 @@ PROTOCOL=http
 SERVER=ffmpeg.org
 SERVER_DIR=releases
 URL=$PROTOCOL://$SERVER/$SERVER_DIR/$PACKAGE_ZIP_FILE
-CONFIG_SCRIPT=configure
-CONFIG_OPTIONS=\
-  --prefix=$DST_DIR
 
 cd $LOCAL_SW_BUILD_DIR;
 wget $URL;
@@ -29,7 +26,7 @@ rm -f $PACKAGE_TAR_FILE;
 mkdir -p $BUILD_DIR;
 mkdir -p $DST_DIR;
 cd $BUILD_DIR;
-../$CONFIG_SCRIPT $CONFIG_OPTIONS;
+../configure --prefix=$DST_DIR;
 make;
 make install;
 
