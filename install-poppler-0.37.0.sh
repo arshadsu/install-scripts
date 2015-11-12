@@ -30,7 +30,14 @@ cd $BUILD_DIR;
   --enable-shared \
   --enable-static \
   --enable-build-type=release \
-  --enable-libopenjpeg=auto
+  --enable-libopenjpeg=auto \
+  --enable-zlib \
+  --enable-libcurl \
+  --enable-introspection=auto \
+  --enable-poppler-qt4 \
+  --enable-poppler-qt5 \
+  --enable-poppler-cpp \
+  --enable-compile-warnings=yes
 make;
 make install;
 

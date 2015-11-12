@@ -26,7 +26,10 @@ rm -f $PACKAGE_TAR_FILE;
 mkdir -p $BUILD_DIR;
 mkdir -p $DST_DIR;
 cd $BUILD_DIR;
-../configure --prefix=$DST_DIR;
+../configure \
+    --prefix=$DST_DIR \
+    --enable-shared \
+    --enable-pic
 make;
 make install;
 
