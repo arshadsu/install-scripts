@@ -1,0 +1,12 @@
+diff --git a/dc/core/MPINospin.cpp b/dc/core/MPINospin.cpp
+index 9d355d0..fcad328 100644
+--- a/dc/core/MPINospin.cpp
++++ b/dc/core/MPINospin.cpp
+@@ -45,6 +45,7 @@
+ #include "MPINospin.h"
+ 
+ #include <ctime>
++#include <algorithm>
+ 
+ namespace
+ {
