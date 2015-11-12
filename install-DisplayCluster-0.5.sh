@@ -5,16 +5,6 @@ echo "Installing DisplayCluster-0.5"
 # Dependencies:
 # * poppler >= 0.24 (using poppler-0.37, please see the install script for options)
 
-# TODO:
-# * Insert the following: 
-#   #include <QDataStream>
-#   to:
-#   DisplayCluster/Deflect/deflect/ServerWorker.h:48 and
-#   DisplayCluster/Deflect/deflect/Socket.h:53
-
-# message(STATUS "*** Package: ${Name} ${${Name}_INCLUDE_DIR}")
-
-
 SOFTWARE=DisplayCluster
 MAJOR_VERSION=0
 MINOR_VERSION=5
@@ -50,10 +40,6 @@ module load mpi/mpich-x86_64
 cmake .. \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=$DST_DIR
-#    -DCMAKE_PREFIX_PATH=$LOCAL_SW_INSTALL_DIR/TUIO/1.4
-#    -DPKG_CONFIG_PATH=/usr/lib64/pkgconfig
-#    -DCMAKE_INCLUDE_PATH=$LOCAL_SW_INSTALL_DIR/TUIO/1.4/include \
-#    -DCMAKE_LIBRARY_PATH=$LOCAL_SW_INSTALL_DIR/TUIO/1.4/lib \
 make
 make install
 module unload mpi/mpich-x86_64
