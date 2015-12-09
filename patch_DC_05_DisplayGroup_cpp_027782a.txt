@@ -1,0 +1,4 @@
+53c53
+<     : _showWindowTitles( true )
+---
+>     : _showWindowTitles( false )

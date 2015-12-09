@@ -28,7 +28,7 @@ mkdir -p $BUILD_DIR
 mkdir -p $DST_DIR
 cd $PACKAGE
 # The v0.6.0 tag is from 2015/11/04
-git checkout v0.6.0
+#git checkout v0.6.0
 # Apply a patch to a file to remove error that compiler is unable to find defintion
 # for std::min
 patch $LOCAL_SW_BUILD_DIR/$PACKAGE/dc/core/MPINospin.cpp $SCRIPT_DIR/patch_MPINospin_cpp_3ff3ca7.txt

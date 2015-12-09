@@ -1,0 +1,8 @@
+44c44
+<     : showWindowBorders_(true)
+---
+>     : showWindowBorders_(false)
+47c47
+<     , showZoomContext_(true)
+---
+>     , showZoomContext_(false)
